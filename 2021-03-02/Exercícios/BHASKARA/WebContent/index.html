@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+	<script>
+		function bhaskara(){ 			
+			var a = parseFloat(document.getElementById("a").value);
+			var b = parseFloat(document.getElementById("b").value);
+			var c = parseFloat(document.getElementById("c").value);
+			
+			var x1 = document.getElementById("x1");
+			var x2 = document.getElementById("x2");
+			
+			var delta = Math.pow(-b,2) - 4 * a * c;
+			
+			x1.innerHTML = (-b + Math.sqrt(delta)) / (2 * a);
+			x2.innerHTML = (-b - Math.sqrt(delta)) / (2 * a);
+				
+		}
+	</script>
+</head>
+<body>
+	<form>
+		<h3>Calculo Equação de 2º Grau</h3>
+		<label for="a">A = </label><input type="text" id="a" placeholder="Digite o valor de A"/><br>
+		<label for="b">B = </label><input type="text" id="b" placeholder="Digite o valor de B"/><br>
+		<label for="c">C = </label><input type="text" id="c" placeholder="Digite o valor de C"/><br>
+		<br>
+		<input type="button" value="Calcular" onClick="bhaskara()"/>
+		<br><br>
+		X1 = <span id="x1"></span><br>
+		X2 = <span id="x2"></span>
+		
+	</form>
+</body>
+</html>

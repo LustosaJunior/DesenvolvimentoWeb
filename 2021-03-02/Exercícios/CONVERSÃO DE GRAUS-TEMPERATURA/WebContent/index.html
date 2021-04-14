@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Insert title here</title>
+		<script>
+			function converter(){
+				var tipo_origem = document.getElementById("tipo_convesao").value;
+				var temp = parseFloat(document.getElementById("temperatura").value);
+				if (tipo_origem=="c"){
+					var f = 1.8 * temp + 32;
+					document.getElementById("resultado").innerHTML = f.toFixed(2);
+				}else if (tipo_origem=="f"){
+					var c = (temp - 32)/1.8;
+					document.getElementById("resultado").innerHTML = c.toFixed(2);
+				}
+			}
+		</script>
+	</head>	
+	<body>
+		<form>
+			<h3>Conversão de Temperatura</h3>
+			
+			<label>Escolha a conversão:</label>
+			<select id="tipo_convesao">
+				<option value="c" selected>Celsius->Fahrenheit</option>
+				<option value="f">Fahrenheit->Celsius</option>
+			</select>
+			<br><br>
+			<label for="temperatura">Temperatura: </label>
+			<input type="text" id="temperatura" placeholder="Digite a temperatura"/>
+			<br><br>
+			<input type="button" value="Converter" onClick="converter()"/>
+			<br><br>
+			Resultado = <span id="resultado"></span>					
+		</form>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+	<script>
+	    function imc(){			
+	    	var p = parseFloat(document.getElementById("peso").value);
+			var a = parseFloat(document.getElementById("altura").value);
+			var r = document.getElementById("resultado");			
+			r.value = (p / Math.pow(a,2)).toFixed(2);			
+		}	
+	</script>
+</head>
+<body>
+	<h3>Cálculo IMC</h3>
+	<form>
+		<label for="peso">Peso:</label>
+		<input type="text" id="peso"/><br>
+		<label for="altura">Altura:</label>
+		<input type="text" id="altura"/><br><br>
+		<input type="button" value="Calcular" onClick="imc()"/><br><br>
+		<label>Resultado:</label>
+		<input type="text" id="resultado"/>
+	</form>
+</body>
+</html>

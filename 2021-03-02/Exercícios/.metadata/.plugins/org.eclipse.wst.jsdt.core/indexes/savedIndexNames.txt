@@ -1,0 +1,11 @@
+INDEX VERSION 1.3+C:\Professor Leandro\Aulas 2021_01\Noite - 3ª - Desenvolvimento Web\2021-03-02_old\Exercícios\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3944274604.index
+3710251765.index
+1977022507.index
+1764763367.index
+1321062397.index
+3796137633.index
+2242972710.index
+54145405.index
+1637827211.index
+3479888780.index

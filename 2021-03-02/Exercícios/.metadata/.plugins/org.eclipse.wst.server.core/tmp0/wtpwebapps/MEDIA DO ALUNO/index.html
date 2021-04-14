@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+	<script>
+	    function media(){			
+	    	var n1 = parseFloat(document.getElementById("nota1").value);
+	    	var n2 = parseFloat(document.getElementById("nota2").value);
+	    	var n3 = parseFloat(document.getElementById("nota3").value);
+	    	var r = document.getElementById("resultado");			
+			var resultado = ((n1+n2+n3)/3).toFixed(2);	
+			r.innerHTML = resultado;
+			if (resultado>=6){
+				r.style="color:blue;";
+			}else{
+				r.style="color:red;";
+			}
+		}	
+	</script>
+</head>
+<body>
+	<h3>Media do Aluno</h3>
+	<form>
+		<label for="nota1">Nota1:</label>
+		<input type="text" id="nota1"/><br>
+		
+		<label for="nota2">Nota2:</label>
+		<input type="text" id="nota2"/><br>
+		
+		<label for="nota3">Nota3:</label>
+		<input type="text" id="nota3"/>
+		
+		<br><br>
+		<input type="button" value="Calcular" onClick="media()"/><br><br>
+		<label>Resultado:</label>
+		<span id="resultado"></span>
+	</form>
+</body>
+</html>

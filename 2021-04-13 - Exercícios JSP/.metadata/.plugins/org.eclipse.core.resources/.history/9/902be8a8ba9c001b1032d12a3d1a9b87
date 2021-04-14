@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Calcula Média</title>
+	</head>
+	<body>
+		<form action="Aluno.jsp" method="post">
+			NOTA1 = <input type="number" name="a"><br>
+			NOTA2 = <input type="number" name="b"><br>
+			FALTAS = <input type="number" name="c"><br>
+			
+			<input type="submit" value="Calcular">
+		</form>
+	</body>
+</html>
