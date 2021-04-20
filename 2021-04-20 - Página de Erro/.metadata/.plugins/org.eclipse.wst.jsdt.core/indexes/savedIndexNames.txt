@@ -1,0 +1,7 @@
+INDEX VERSION 1.3+C:\Users\mayma\OneDrive\Área de Trabalho\Facul\Desenvolvimento Web\DesenvolvimentoWeb\2021-04-20 - Página de Erro\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3489261740.index
+446084384.index
+3562421323.index
+3359615454.index
+1324193210.index
+3733461772.index
